@@ -21,7 +21,7 @@ public class FileReader {
                 }
             }
         } catch (IOException e) {
-            System.out.println(e.toString());
+            System.err.print(e);
         }
 
         return profile;
