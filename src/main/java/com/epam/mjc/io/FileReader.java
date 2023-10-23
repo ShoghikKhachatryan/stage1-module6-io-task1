@@ -21,14 +21,9 @@ public class FileReader {
                 }
             }
         } catch (IOException e) {
-            System.err.print(e);
+            e.printStackTrace();
         }
 
         return profile;
-    }
-
-    public static void main(String[] args) {
-        FileReader fileReader = new FileReader();
-        fileReader.getDataFromFile(new File("src/main/resources/Profile.txt"));
     }
 }
